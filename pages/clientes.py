@@ -136,7 +136,7 @@ def main():
         # Valor gasto por bons clientes no ano passado
         valor_gasto_bons_clientes = df_bons_clientes['SOMA_COMPRAS'].sum()
 
-        st.metric("Valor Gasto por Clientes Destaques", f'R$ {valor_gasto_bons_clientes}')
+        st.metric("Valor Gasto por Clientes Destaques", valor_gasto_bons_clientes)
 
         st.write("")
         st.write("")
