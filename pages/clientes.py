@@ -1,8 +1,7 @@
 import pandas as pd
 from datetime import datetime, timedelta
 import streamlit as st
-import locale
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+
 
 
 # Carregando o dataframe
