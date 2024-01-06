@@ -11,7 +11,7 @@ st.header("Análise de dados")
 
 
 
-st.write("Esta análise de dados foi conduzida com base no dataframe extraído do sistema Exatto, abrangendo o período de 01 de Janeiro de 2023 a 01 de Janeiro de 2024. O foco principal envolveu duas abordagens distintas: a análise dos clientes e a análise dos produtos.")
+st.write("Esta análise de dados foi conduzida com base no dataframe extraído do sistema Exatto, referentes à loja do Pátio Buriti, abrangendo o período de 01 de Janeiro de 2023 a 01 de Janeiro de 2024. O foco principal envolveu duas abordagens distintas: a análise dos clientes e a análise dos produtos.")
 
 
 st.divider()
