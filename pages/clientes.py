@@ -121,7 +121,7 @@ def main():
         df_clientes_ativos = bons_clientes_df[bons_clientes_df['STATUS'] == 'Ativo']
         df_clientes_grupo_mais_comprado = df_clientes_ativos[['CLIENTE', 'GRUPO_MAIS_COMPRADO', 'SOMA_COMPRAS']]
         df_clientes_grupo_mais_comprado = df_clientes_grupo_mais_comprado.drop_duplicates(subset=['CLIENTE'])
-        df_clientes_grupo_mais_comprado['SOMA_COMPRAS_FORMATADO'] = df_clientes_grupo_mais_comprado['SOMA_COMPRAS'].apply(lambda x: locale.currency(x, grouping=True))
+        df_clientes_grupo_mais_comprado['SOMA_COMPRAS_FORMATADO'] = df_clientes_grupo_mais_comprado['SOMA_COMPRAS']
 
         st.write(df_clientes_grupo_mais_comprado[['CLIENTE', 'GRUPO_MAIS_COMPRADO', 'SOMA_COMPRAS_FORMATADO']], use_container_width=True)
     # Quantidade de clientes ativos e inativos
@@ -136,8 +136,8 @@ def main():
     with right:
         # Valor gasto por bons clientes no ano passado
         valor_gasto_bons_clientes = df_bons_clientes['SOMA_COMPRAS'].sum()
-        valor_gasto_formatado = locale.currency(valor_gasto_bons_clientes, grouping=True)
-        st.metric("Valor Gasto por Clientes Destaques", valor_gasto_formatado)
+
+        st.metric("Valor Gasto por Clientes Destaques", f'R$ {valor_gasto_bons_clientes}')
 
         st.write("")
         st.write("")
@@ -154,7 +154,7 @@ def main():
         df_clientes_inativos = bons_clientes_df[bons_clientes_df['STATUS'] == 'Inativo'] 
         df_clientes_grupo_mais_comprado = df_clientes_inativos[['CLIENTE', 'GRUPO_MAIS_COMPRADO', 'SOMA_COMPRAS']]
         df_clientes_grupo_mais_comprado = df_clientes_grupo_mais_comprado.drop_duplicates(subset=['CLIENTE'])
-        df_clientes_grupo_mais_comprado['SOMA_COMPRAS_FORMATADO'] = df_clientes_grupo_mais_comprado['SOMA_COMPRAS'].apply(lambda x: locale.currency(x, grouping=True))
+        df_clientes_grupo_mais_comprado['SOMA_COMPRAS_FORMATADO'] = df_clientes_grupo_mais_comprado['SOMA_COMPRAS']
 
         st.write(df_clientes_grupo_mais_comprado[['CLIENTE', 'GRUPO_MAIS_COMPRADO', 'SOMA_COMPRAS_FORMATADO']], use_container_width=True)
 
