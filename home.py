@@ -16,9 +16,9 @@ st.write("Esta análise de dados foi conduzida com base no dataframe extraído d
 
 st.divider()
 st.markdown("#### Análise de Clientes:")
-st.write("""Na seção dedicada aos clientes, priorizamos a identificação dos clientes com as melhores vendas. Além disso, realizamos um estudo detalhado do perfil de cada cliente. Exploramos aspectos como o intervalo entre suas compras, as linhas de produtos mais adquiridas e outros padrões de compra. O objetivo é personalizar conteúdos e ofertas específicas, entregues via WhatsApp, para aumentar o engajamento e fidelidade desses clientes.
+st.write("""Na seção dedicada aos clientes, priorizamos a identificação dos clientes com as melhores compras. Além disso, realizamos um estudo detalhado do perfil de cada cliente. Exploramos aspectos como , as linhas de produtos mais adquiridas e outros padrões de compra. O objetivo é personalizar conteúdos e ofertas específicas, entregues via WhatsApp, para aumentar o engajamento e fidelidade desses clientes.
 
-Outro ponto de foco na análise de clientes foi a identificação daqueles que fizeram boas compras no passado, mas que não realizaram nenhuma transação nos últimos 3 meses. Para esses clientes, estamos estudando estratégias para reatraí-los, visando reativar seu interesse na loja e incentivá-los a realizar novas compras.
+Outro ponto de foco na análise de clientes foi a identificação daqueles que fizeram boas compras no passado, mas que não realizaram nenhuma transação nos últimos 4 meses. Para esses clientes, estamos estudando estratégias para reatraí-los, visando reativar seu interesse na loja e incentivá-los a realizar novas compras.
 """)
 st.divider()
 st.markdown("#### Análise de Produtos:")
